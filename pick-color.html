@@ -5,10 +5,118 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 
-	<script type="text/javascript" src="static/css/js/libs/p5/p5.min.js"></script>
+    <script type="text/javascript" src="static/css/js/libs/p5/p5.min.js"></script>
     <script type="text/javascript" src="static/css/js/pick-color.js"></script>
 </head>
 <body>
+
+    <style type="text/css">
+        *{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.white-txt {
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 4px 4px;
+}
+
+.font-russo {
+    font-family: "Russo One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+li:last-child{
+    margin-right: 0;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 78px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 31px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#orange {
+    background-color: #ffa500;
+}
+
+#grey {
+    background-color: #59BC98;
+}
+
+#blue {
+    background-color: #2594D2;
+}
+#green {
+    background-color: #72BC59;
+}
+
+#pink {
+    background-color: #BC59A0;
+}
+
+#yellow {
+    background-color: #DCF63C;
+}
+
+a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.myLi:hover{
+    border: 3px solid black;
+    padding: 2px;
+}
+
+.transition{
+    transition: all 2s ease-in-out;
+}
+    </style>
+
       <div class="container">
             <div class="title-wrap">
                 <h1 class="white-txt font-russo mainTitle transition">PICK A COLOR</h1>
@@ -23,7 +131,7 @@
             <div class="picker-container">
                 <ul>
                     <li class="myLi">
-                        <a class="myColor" href="#" data-bgcolor="#FE0202" id="red"></a>
+                        <a class="myColor" href="#" data-bgcolor="#ffa500" id="orange"></a>
                     </li>
                     <li class="myLi">
                         <a class="myColor" href="#" data-bgcolor="#59BC98" id="grey"></a>
@@ -43,7 +151,5 @@
                 </ul>
             </div>
         </div>
-
-        <script src="static/js/index.js"></script>
 </body>
 </html>
